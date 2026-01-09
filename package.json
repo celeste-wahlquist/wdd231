@@ -12,7 +12,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "vite": "^6.2.3"
-  }
+  "dependencies": {"vite":"^6.2.3"}
 }
