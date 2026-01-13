@@ -249,7 +249,7 @@ svg {
     
     z-index: 2;
     padding: 0 2rem;
-    margin-top: -6rem;
+    margin-top: -6.5rem;
     
     display: flex;
     flex-direction: row;
@@ -263,12 +263,37 @@ svg {
     width: 20%;
 }
 
+#park-header {
+    background-color: var(--bs-black);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.bada-yada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+.bada-yada span {
+    color: var(--bs-white);
+    text-decoration: underline;
+    text-decoration-color: var(--bs-black);
+}
 
-
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .home-text {
-        margin-top: -5rem;
+        margin-top: -6rem;
+    }
+    .bada-yada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4rem;
     }
 }
 
