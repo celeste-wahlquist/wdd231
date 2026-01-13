@@ -234,28 +234,27 @@ svg {
 
 .home {
     position: relative;
-    z-index: 0;
-}
-
-.home-image {
-    position: relative;
+    background-image: url("https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg");
+    background-size: cover;
+    z-index: -1;
     width: 100vw;
     height: 60vh;
-    object-fit: cover;
-    z-index: -1;
+    margin-top: -0.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
+
+
 .home-text {
     width: 100%;
-    
+    color: var(--bs-white);
     z-index: 2;
     padding: 0 2rem;
-    margin-top: -6.5rem;
-    
+    background: rgba(33, 37, 41, 0.6);
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    background: rgba(33, 37, 41, 0.6);
 }
 
 .location-details {
@@ -271,14 +270,14 @@ svg {
     justify-content: center;
 }
 
-.bada-yada {
+.park-options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
 }
-.bada-yada span {
+.park-options span {
     color: var(--bs-white);
     text-decoration: underline;
     text-decoration-color: var(--bs-black);
@@ -288,7 +287,7 @@ svg {
     .home-text {
         margin-top: -6rem;
     }
-    .bada-yada {
+    .park-options {
         display: flex;
         flex-direction: column;
         justify-content: center;
