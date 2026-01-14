@@ -56,7 +56,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-serif: "Times New Roman", Times, serif;
+  --bs-font-serif: w;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(
@@ -282,6 +282,42 @@ svg {
     text-decoration: underline;
     text-decoration-color: var(--bs-black);
 }
+main {
+    padding: 1rem;
+}
+#park-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-link,
+.info-link:link,
+.info-link:visited,
+.info-link:hover,
+.info-link:active {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+}
+.info-description {
+    font: var(--bs-body-font-family);
+    color: var(--bs-black);
+}
+
+footer {
+    background-color: var(--bs-gray-200);
+    padding: 2rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto
+}
+
+footer h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+.footer-label {
+    font-weight: bold;
+}
 
 @media (min-width: 800px) {
     .home-text {
@@ -294,6 +330,20 @@ svg {
         align-items: center;
         margin: 0 4rem;
     }
+    
+    #park-info {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8rem;
+        padding: 1rem;
+
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    
 }
+
+
 
 
