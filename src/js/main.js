@@ -39,6 +39,13 @@ const parkInfoLinks = [
     }
 ];
 
+function yellowstoneEstablished() {
+    const container = document.querySelector("#yellowstone-introduction")
+    container.innerHTML +=
+        `<h1>National Yellowstone Park</h1>
+         <p>On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.</p>`
+}
+
 function displayParkInfo(parkInfoLinks) {
     for (const value in parkInfoLinks) {
         document.getElementById("park-info").innerHTML += 
@@ -50,5 +57,7 @@ function displayParkInfo(parkInfoLinks) {
     }
 } 
 
+
+yellowstoneEstablished();
 displayParkInfo(parkInfoLinks);
 
