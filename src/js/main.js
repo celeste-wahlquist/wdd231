@@ -55,8 +55,7 @@ function displayParkInfo(parkInfoLinks) {
             <p class="info-description">${parkInfoLinks[value].description}</p>    
             </section>`;
     }
-} 
-
+}
 
 yellowstoneEstablished();
 displayParkInfo(parkInfoLinks);
